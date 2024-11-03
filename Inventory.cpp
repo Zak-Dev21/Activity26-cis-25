@@ -3,8 +3,8 @@
 
 namespace InventorySystem {
     // Implementing the operator!=
-    bool BookInfo::operator!=(const BookInfo& other) const {
-        return (bookISBN != other.bookISBN); // checking with ISBN *UNIQUE IDENTIFIER*
+    bool operator!=(const BookInfo& book1, const BookInfo& book2) {
+        return book1.bookISBN != book2.bookISBN; // checking with ISBN *UNIQUE IDENTIFIER*
     }
 
     // Function to add a book to the inventory

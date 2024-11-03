@@ -19,8 +19,6 @@ namespace InventorySystem {
         string bookLanguage;
         string bookAuthor;
 
-        // Overloaded operator!= for comparison
-        bool operator!=(const BookInfo& other) const;
     };
 
     // BookLocation structure
@@ -37,5 +35,8 @@ namespace InventorySystem {
     // Operator overloading for adding a book
     vector<BookInfo>& operator+=(vector<BookInfo>& books, const BookInfo& book);
     vector<BookLocation>& operator+=(vector<BookLocation>& locations, const BookLocation& location);
+
+    // Overloaded operator!= for comparison
+    bool operator!=(const BookInfo& book1, const BookInfo& book2);
 }
 #endif
